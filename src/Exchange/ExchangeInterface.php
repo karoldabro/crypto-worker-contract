@@ -2,7 +2,7 @@
 
 namespace Kdabrow\CryptoWorkerContract\Exchange;
 
-use DateTimeInterface;
+use Carbon\CarbonInterface;
 use Illuminate\Collections\Collection;
 use Kdabrow\CryptoWorkerContract\DataObjects\Exchange\Kline;
 use Kdabrow\CryptoWorkerContract\DataObjects\Exchange\Order;
@@ -56,5 +56,5 @@ interface ExchangeInterface
      *
      * @return Collection
      */
-    public function allOrders(string $pair, DateTimeInterface $since, DateTimeInterface $until): Collection;
+    public function allOrders(string $pair, CarbonInterface $since, CarbonInterface $until): Collection;
 }

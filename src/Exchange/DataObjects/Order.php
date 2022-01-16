@@ -2,14 +2,14 @@
 
 namespace Kdabrow\CryptoWorkerContract\Exchange\DataObjects;
 
-use DateTimeInterface;
+use Carbon\CarbonInterface;
 
 class Order
 {
     public function __construct(
         public readonly string $id, 
         public readonly string $pair, 
-        public readonly DateTimeInterface $timestamp, 
+        public readonly CarbonInterface $timestamp, 
         public readonly float $price,
     ) {
         

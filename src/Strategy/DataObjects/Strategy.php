@@ -2,11 +2,13 @@
 
 namespace Kdabrow\CryptoWorkerContract\Strategy\DataObjects;
 
+use Carbon\CarbonInterval;
+
 class Strategy
 {
     public function __construct(
         public readonly string $name,
-        public readonly string $interval,
+        public readonly CarbonInterval $interval,
     ) {
         
     }
