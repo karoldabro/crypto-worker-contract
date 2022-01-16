@@ -2,15 +2,20 @@
 
 namespace Kdabrow\CryptoWorkerContract\Worker;
 
-use Kdabrow\CryptoWorkerContract\Exchange\ExchangeInterface;
-use Kdabrow\CryptoWorkerContract\Strategy\DataObjects\Pair;
-use Kdabrow\CryptoWorkerContract\Strategy\DataObjects\Strategy;
+use Carbon\CarbonInterval;
+use Kdabrow\CryptoWorkerContract\Strategy\Enums\Interval;
 
 interface ConfigurationInterface
 {
-    public function pair(): Pair;
+    public function getStrategyId(): string;
 
-    public function strategy(): Strategy;
+    public function getExchangeId(): string;
 
-    public function exchange(): ExchangeInterface;
+    public function getPair(): string;
+
+    public function getKlineInterval(): Interval|string;
+
+    public function getKlineQuantity(): int;
+
+    public function getRefreshIntrval(): CarbonInterval;
 }
