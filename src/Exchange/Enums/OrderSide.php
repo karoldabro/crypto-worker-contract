@@ -2,7 +2,9 @@
 
 namespace Kdabrow\CryptoWorkerContract\Exchange\Enums;
 
-enum OrderTypeEnum
+enum OrderSide
 {
-    case StopLoss;
+    case Buy;
+    
+    case Sell;
 }

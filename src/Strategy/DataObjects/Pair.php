@@ -2,13 +2,13 @@
 
 namespace Kdabrow\CryptoWorkerContract\Strategy\DataObjects;
 
-use Carbon\CarbonInterval;
+use Kdabrow\CryptoWorkerContract\Strategy\Enums\Interval;
 
 class Pair
 {
     public function __construct(
         public readonly string $pair,
-        public readonly CarbonInterval $interval,
+        public readonly Interval|string $interval,
     ) {
         
     }
