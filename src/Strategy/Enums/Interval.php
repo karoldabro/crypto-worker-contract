@@ -2,7 +2,7 @@
 
 namespace Kdabrow\CryptoWorkerContract\Strategy\Enums;
 
-enum Interval 
+enum Interval: string
 {
     case OneMinute = '1m';
     case ThreeMinutes = '3m';
