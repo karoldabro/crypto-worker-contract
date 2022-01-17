@@ -17,5 +17,5 @@ interface ConfigurationInterface
 
     public function getKlineQuantity(): int;
 
-    public function getRefreshIntrval(): CarbonInterval;
+    public function getRefreshInterval(): CarbonInterval;
 }
