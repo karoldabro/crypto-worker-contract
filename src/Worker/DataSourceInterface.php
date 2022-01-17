@@ -4,6 +4,8 @@ namespace Kdabrow\CryptoWorkerContract\Worker;
 
 use Illuminate\Collections\Collection;
 use Kdabrow\CryptoWorkerContract\DataObjects\Kline;
+use Carbon\CarbonInterface;
+use Carbon\Carbon;
 
 interface DataSourceInterface
 {
@@ -12,7 +14,7 @@ interface DataSourceInterface
      *
      * @return bool
      */
-    public function isSynced(): bool;
+    public function isSynced(CarbonInterface $since = new Carbon()): bool;
 
     /**
      * Update klines in source
