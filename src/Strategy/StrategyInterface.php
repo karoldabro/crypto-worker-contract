@@ -2,7 +2,7 @@
 
 namespace Kdabrow\CryptoWorkerContract\Strategy;
 
-use Illuminate\Collections\Collection;
+use Illuminate\Support\Collection;
 use Kdabrow\CryptoWorkerContract\Exchange\DataObjects\Kline;
 use Kdabrow\CryptoWorkerContract\Strategy\DataObjects\Calculation;
 
@@ -11,7 +11,7 @@ interface StrategyInterface
     /**
      * Performs all needed calculations: indicators, checks etc.
      *
-     * @param Collection<Kline> $klines
+     * @param Collection<int, Kline> $klines
      * @return Calculation Calculations for last kline
      */
     public function calculate(Collection $klines): Calculation;
