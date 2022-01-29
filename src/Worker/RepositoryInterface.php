@@ -2,8 +2,8 @@
 
 namespace Kdabrow\CryptoWorkerContract\Worker;
 
-use Illuminate\Collections\Collection;
-use Kdabrow\CryptoWorkerContract\DataObjects\Kline;
+use Illuminate\Support\Collection;
+use Kdabrow\CryptoWorkerContract\Exchange\DataObjects\Kline;
 use Carbon\CarbonInterface;
 
 interface RepositoryInterface
