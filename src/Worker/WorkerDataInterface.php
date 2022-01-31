@@ -11,7 +11,7 @@ interface WorkerDataInterface
 
     public function getExchangeId(): string;
 
-    public function getPair(): string;
+    public function getSymbol(): string;
 
     public function getKlineInterval(): Interval|string;
 

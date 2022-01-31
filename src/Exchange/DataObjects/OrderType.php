@@ -12,7 +12,7 @@ class OrderType
         public readonly OrderType $type,
         public readonly OrderSide $side,
         public readonly string $id,
-        public readonly string $pair,
+        public readonly string $symbol,
         public readonly float $price,
         public readonly CarbonInterface $dateTime,
         public readonly ?float $quantity,

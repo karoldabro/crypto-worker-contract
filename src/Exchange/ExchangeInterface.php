@@ -3,10 +3,10 @@
 namespace Kdabrow\CryptoWorkerContract\Exchange;
 
 use Carbon\CarbonInterface;
-use Illuminate\Collections\Collection;
-use Kdabrow\CryptoWorkerContract\DataObjects\Exchange\Kline;
-use Kdabrow\CryptoWorkerContract\DataObjects\Exchange\Order;
-use Kdabrow\CryptoWorkerContract\DataObjects\Exchange\OrderType;
+use Illuminate\Support\Collection;
+use Kdabrow\CryptoWorkerContract\Exchange\DataObjects\Kline;
+use Kdabrow\CryptoWorkerContract\Exchange\DataObjects\Order;
+use Kdabrow\CryptoWorkerContract\Exchange\DataObjects\OrderType;
 
 interface ExchangeInterface
 {
@@ -23,7 +23,7 @@ interface ExchangeInterface
      * @param string $pair
      * @param string $interval
      * @param integer $quantity
-     * @return Collection<Kline>
+     * @return Collection<int, Kline>
      */
     public function klines(string $pair, string $interval, int $quantity): Collection;
 
