@@ -1,10 +1,10 @@
 <?php
 
-namespace Kdabrow\CryptoWorkerContract\Worker;
+namespace Kdabrow\WorkerContract;
 
-use Illuminate\Support\Collection;
-use Kdabrow\CryptoWorkerContract\Exchange\DataObjects\Kline;
 use Carbon\CarbonInterface;
+use Illuminate\Support\Collection;
+use Kdabrow\ExchangeContract\DataObjects\Kline;
 
 interface RepositoryInterface
 {

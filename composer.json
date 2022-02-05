@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kdabrow\\CryptoWorkerContract\\": "src/"
+            "Kdabrow\\WorkerContract\\": "src/"
         }
     },
     "minimum-stability": "dev",

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kdabrow\CryptoWorkerContract\Worker;
+namespace Kdabrow\WorkerContract;
 
 use Carbon\CarbonInterval;
-use Kdabrow\CryptoWorkerContract\Strategy\Enums\Interval;
+use Kdabrow\ExchangeContract\Enums\Interval;
 
 interface WorkerDataInterface
 {
